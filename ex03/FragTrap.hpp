@@ -6,7 +6,7 @@
 /*   By: bsouhar <bsouhar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 21:59:48 by bsouhar           #+#    #+#             */
-/*   Updated: 2023/10/17 23:34:32 by bsouhar          ###   ########.fr       */
+/*   Updated: 2023/10/17 23:37:54 by bsouhar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <iostream>
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap {
+class FragTrap : public virtual ClapTrap {
 
     public:
         FragTrap();

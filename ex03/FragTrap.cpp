@@ -6,7 +6,7 @@
 /*   By: bsouhar <bsouhar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 21:59:44 by bsouhar           #+#    #+#             */
-/*   Updated: 2023/10/17 23:35:29 by bsouhar          ###   ########.fr       */
+/*   Updated: 2023/10/17 23:50:40 by bsouhar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ FragTrap& FragTrap::operator=(const FragTrap& FragTrap) {
     if (this == &FragTrap)
         return (*this);
     std::cout << "FragTrap assignation operator has been called" << std::endl;
+    this->_name = FragTrap._name;
     this->hitPoint = FragTrap.hitPoint;
     this->energyPoint = FragTrap.energyPoint;
     this->attackDamage = FragTrap.attackDamage;

@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsouhar <bsouhar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 21:59:48 by bsouhar           #+#    #+#             */
-/*   Updated: 2023/10/17 23:34:32 by bsouhar          ###   ########.fr       */
+/*   Created: 2023/10/14 15:11:21 by bsouhar           #+#    #+#             */
+/*   Updated: 2023/10/17 23:55:05 by bsouhar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#include "DiamondTrap.hpp"
 
-#include <iostream>
-#include "ClapTrap.hpp"
+int main() {
+    DiamondTrap diamondTrap("DiamondTrap");
+    DiamondTrap diamondTrap2(diamondTrap);
+    DiamondTrap diamondTrap3;
 
-class FragTrap : public ClapTrap {
-
-    public:
-        FragTrap();
-        FragTrap(std::string name);
-        FragTrap(const FragTrap& fragTrap);
-        FragTrap& operator = (const FragTrap& fragTrap);
-        ~FragTrap();
-        void highFiveGuys(void);
-};
-
-#endif
+    diamondTrap3 = diamondTrap2;
+    diamondTrap.attack("target");
+    diamondTrap.takeDamage(10);
+    diamondTrap.beRepaired(10);
+    diamondTrap.guardGate();
+    diamondTrap.highFiveGuys();
+    diamondTrap.whoAmI();
+    return (0);
+}
