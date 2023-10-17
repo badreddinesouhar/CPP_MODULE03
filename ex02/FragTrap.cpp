@@ -6,7 +6,7 @@
 /*   By: bsouhar <bsouhar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 21:59:44 by bsouhar           #+#    #+#             */
-/*   Updated: 2023/10/17 22:46:52 by bsouhar          ###   ########.fr       */
+/*   Updated: 2023/10/17 23:26:47 by bsouhar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name) {
     std::cout << "Default FragTrap has been called" << std::endl;
 }
 
+void FragTrap::highFiveGuys(void) {
+    std::cout << "FragTrap " << _name << " high five guys" << std::endl;
+}
+
+FragTrap::~FragTrap() {
+    std::cout << "Deconstructor is called" << std::endl;
+}
