@@ -37,7 +37,6 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& ClapTrap) {
         energyPoint = ClapTrap.energyPoint;
         attackDamage = ClapTrap.attackDamage;
     }
-    
     return *this;
 }
 

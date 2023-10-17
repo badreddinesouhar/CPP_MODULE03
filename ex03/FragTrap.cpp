@@ -23,7 +23,7 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name) {
     std::cout << "Default FragTrap has been called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap& copy) {
+FragTrap::FragTrap(const FragTrap& copy) : ClapTrap(copy) {
     std::cout << "FragTrap copy constructor has been called" << std::endl;
     *this = copy;
 }
@@ -32,7 +32,6 @@ FragTrap& FragTrap::operator=(const FragTrap& FragTrap) {
     if (this == &FragTrap)
         return (*this);
     std::cout << "FragTrap assignation operator has been called" << std::endl;
-    this->_name = FragTrap._name;
     this->hitPoint = FragTrap.hitPoint;
     this->energyPoint = FragTrap.energyPoint;
     this->attackDamage = FragTrap.attackDamage;
