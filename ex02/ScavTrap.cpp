@@ -17,7 +17,7 @@ ScavTrap::ScavTrap() {
 }
 
 ScavTrap::~ScavTrap() {
-    std::cout << "ScavTrap Deconstructor has been called" << std::endl;
+    std::cout << "ScavTrap Deconstructor has been called for " << _name << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name) {

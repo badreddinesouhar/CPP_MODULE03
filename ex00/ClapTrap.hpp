@@ -23,6 +23,7 @@ class ClapTrap {
     unsigned int energyPoint;
     unsigned int attackDamage;
   public:
+    ClapTrap();
     ClapTrap(std::string name);
     ClapTrap(const ClapTrap& copy);
     bool operator!=(const ClapTrap& ClapTrap);

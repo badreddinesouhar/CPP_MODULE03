@@ -43,5 +43,5 @@ void FragTrap::highFiveGuys(void) {
 }
 
 FragTrap::~FragTrap() {
-    std::cout << "Deconstructor is called" << std::endl;
+    std::cout << "Deconstructor is called for " << _name << std::endl;
 }

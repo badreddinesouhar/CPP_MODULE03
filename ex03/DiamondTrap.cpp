@@ -19,9 +19,11 @@ DiamondTrap::DiamondTrap() : ClapTrap(), ScavTrap(), FragTrap() {
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), ScavTrap(name), FragTrap(name) {
     std::cout << "DiamondTrap constructor called." << std::endl;
     this->_name = name;
+    std::cout << _name << std::endl;
     this->hitPoint = FragTrap::hitPoint;
     this->energyPoint = ScavTrap::energyPoint;
     this->attackDamage = FragTrap::attackDamage;
+    ClapTrap::_name = name + "_clap_name";
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& copy) : ClapTrap(copy) ,  ScavTrap(copy) , FragTrap(copy) {
@@ -41,7 +43,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& diamndtrap) {
 }
 
 DiamondTrap::~DiamondTrap() {
-    std::cout << "Diamondtrap deconstructo has been called" << std::endl;
+    std::cout << "Diamondtrap deconstructo has been called for " << _name << std::endl;
 }
 
 void DiamondTrap::attack(std::string target) {

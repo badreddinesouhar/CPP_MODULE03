@@ -12,6 +12,10 @@
 
 #include "ClapTrap.hpp"
 
+ClapTrap::ClapTrap() {
+
+}
+
 ClapTrap::ClapTrap(std::string name) : _name(name) , hitPoint(10), energyPoint(10), attackDamage(0) {
     std::cout << "Constructor has been called" << std::endl;
 }
@@ -38,7 +42,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& ClapTrap) {
 }
 
 ClapTrap::~ClapTrap() {
-    std::cout << "deconstuctor has been called" << std::endl;
+    std::cout << "deconstuctor has been called for " << _name << std::endl;
 }
 
 void ClapTrap::attack(const std::string& target) {
