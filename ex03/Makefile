@@ -1,7 +1,7 @@
 NAME = DiamondTrap
 
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
-HDF = ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.cpp
+HDF = ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
 OBJ = $(SRC:.cpp=.o )
 
 %.o: %.cpp $(HDF)
