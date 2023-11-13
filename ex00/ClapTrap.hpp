@@ -6,7 +6,7 @@
 /*   By: bsouhar <bsouhar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 15:11:15 by bsouhar           #+#    #+#             */
-/*   Updated: 2023/10/17 20:47:34 by bsouhar          ###   ########.fr       */
+/*   Updated: 2023/11/12 20:55:36 by bsouhar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,5 @@ class ClapTrap {
     void beRepaired(unsigned int amount);
     ~ClapTrap();
 };
-
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: bsouhar <bsouhar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 15:11:18 by bsouhar           #+#    #+#             */
-/*   Updated: 2023/10/17 20:49:22 by bsouhar          ###   ########.fr       */
+/*   Updated: 2023/11/13 13:00:23 by bsouhar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& ClapTrap) {
         energyPoint = ClapTrap.energyPoint;
         attackDamage = ClapTrap.attackDamage;
     }
-    
     return *this;
 }
 
